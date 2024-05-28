@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d2314fe5d0.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    test
+    <main>
+        <h2 class="header">1/5</h2>
+        <div class="sub-main">
+            <i onclick="move(-1)">&#10094</i>
+            <div class="slide fade active">
+                <img src="https://images.unsplash.com/photo-1566908829550-e6551b00979b?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="A House" title="A House">
+            </div>
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1621707098150-3c0b7de2c3ef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="A House" title="A House">
+            </div>
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1601186749797-cc0e9adde360?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="A House" title="A House">
+            </div>
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1563177978-4c5ffc081b2a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="A House" title="A House">
+            </div>
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1621496136839-28b75cc8ec6b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="A House" title="A House">
+            </div>
+            <i onclick="move(1)">&#10095</i>
+        </div>
+
+        <div class="pagination">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </main>
 </body>
+<script src="./script.js"></script>
+
 </html>
